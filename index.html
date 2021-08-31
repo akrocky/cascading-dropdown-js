@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.div{
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   /* width: 450px; */
+   /* margin-top: 100px;
+   margin-left: 400px; */
+
+   border: 2px dotted rgb(113, 122, 122);
+   background-color: #ddd;
+   color: white;
+  
+  
+}
+.div2{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    border: 4px solid rgb(202, 199, 199);
+    box-shadow: rgba(0,0, 0, 0.8);
+    width: 300px;
+    height: 200px;
+    padding: 40px;
+    
+}
+.ha{
+    margin-left: 594px;
+    margin-top: 80px;
+    border: 2px solid black;
+    display: inline-block;
+}
+
+    </style>
+</head>
+<body>
+    <h1 class="ha">Cascading Dropdown</h1>
+
+<div class="div">
+    <div  class="div2">
+        <form name="form1" id="form1" action="/action_page.php">
+            Subjects: <select name="subject" id="subject">
+                <option value="" selected="selected">Select subject</option>
+              </select>
+              <br><br>
+            Topics: <select name="topic" id="topic">
+                <option value="" selected="selected">Please select subject first</option>
+              </select>
+              <br><br>
+            Chapters: <select name="chapter" id="chapter">
+                <option value="" selected="selected">Please select topic first</option>
+              </select>
+              <br><br>
+              <input type="submit" value="Submit">  
+            </form>
+
+    </div>
+</div>
+
+
+<script src="app.js"></script>
+</body>
+</html>
